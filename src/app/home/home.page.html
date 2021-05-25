@@ -1,11 +1,108 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>
-      Base
+      Home
     </ion-title>
-  </ion-toolbar>
+  
+
+  <ion-buttons slot="end">
+    <ion-button color="medium">
+      <!-- <ion-icon name="square" class="large-icon"></ion-icon> -->
+      <ion-icon name="person-circle" class="large-icon"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+
+</ion-toolbar>
+
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+  <div class="ion-padding">
+    <div class="">
+      <h4 class="p-4">Dashboard <span class="fr link">Edit</span></h4>
+      
+    </div>
+
+    
+
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card color="dark">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="book-outline" class="fl"></ion-icon>
+                <p>Homework to do</p> 
+                <h2>4</h2>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card color="medium">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="mail-outline" class="fl"></ion-icon>
+                <p>Attendance score</p> 
+                <h2>95%</h2>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card color="medium">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="bar-chart-outline" class="fl"></ion-icon>
+                <p>Average grade</p> 
+                <h2>10</h2>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card color="medium">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="reader-outline" class="fl"></ion-icon>
+                <p>Classes today</p> 
+                <h2>4</h2>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card color="medium">
+            <ion-row>
+              <ion-col size="6">
+                <ion-card-content>
+                  <div class="title">
+                    <ion-icon name="time-outline" class="fl"></ion-icon>
+                    <p>Next class today</p> 
+                    <h2>Math</h2>
+                  </div>
+                </ion-card-content>
+              </ion-col>
+              <ion-col size="6">
+                <ion-card-content>
+                  <div class="title">
+                  
+                    <p class="mb">09:00 AM
+                    <br>10:30 AM</p> 
+
+                    <p>B-200 <br>Classroom</p> 
+                  </div>
+                </ion-card-content>
+              </ion-col>
+            </ion-row>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+
 
 </ion-content>
