@@ -1,11 +1,70 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>
-      Page
+      Classes <span>Grades</span>
     </ion-title>
-  </ion-toolbar>
+</ion-toolbar>
+
 </ion-header>
 
 <ion-content>
+
+  <div class="ion-padding-horizontal">
+    <h4 class="p-4">Homework to do <span class="fr link">See history</span></h4>
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="12">
+          <ion-card color="dark">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="book-outline" class="fl"></ion-icon>
+                <p>There are <br>tasks to do</p> 
+                <ion-icon name="chevron-forward-outline" class="fr icon-go"></ion-icon>
+                <h2>Programming</h2>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col size="12">
+          <ion-card color="dark">
+            <ion-card-content>
+              <div class="title">
+                <ion-icon name="book-outline" class="fl"></ion-icon>
+                <p>There are <br>tasks to do</p> 
+                <ion-icon name="chevron-forward-outline" class="fr icon-go"></ion-icon>
+                <h2>Mathematics</h2>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+        <h4 class="p-4">All <span class="fr link">Sort by <ion-icon class="sort-icon" name="chevron-down-outline"></ion-icon> </span></h4>
+
+        <ion-searchbar></ion-searchbar>
+
+        <ion-grid fixed>
+          <ion-row>
+        
+            <ion-col size="12">
+              <ion-card color="medium">
+                <ion-card-content>
+                  <div class="title">
+                    <ion-badge class="fl">
+                      10
+                    </ion-badge>
+                    <p>Average <br>grade</p> 
+                    <ion-icon name="chevron-forward-outline" class="fr icon-go"></ion-icon>
+                    <h2>Mathematics</h2>
+                  </div>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+  </div>
 
 </ion-content>
