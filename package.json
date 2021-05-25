@@ -1,8 +1,8 @@
 {
-  "name": "habib-ui-2021",
+  "name": "habibalmawali-ui-2021",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "Habib AlMawali",
+  "homepage": "https://thedevclass.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -56,5 +56,5 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.0.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic UI Project"
 }
