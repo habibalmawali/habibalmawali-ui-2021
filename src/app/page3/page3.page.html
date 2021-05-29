@@ -1,11 +1,71 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-title>
-      Page
+      Calendar
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <!-- <div class="ion-padding-horizontal">   -->
+  <div class="ion-padding">  
+  
+  <ion-card class="calendar">
+  
+    <div class="cal-nav ion-text-center">
+      <ion-button class="fl" fill="clear" size="small" color="dark" (click)="onPreviousMonth()">
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+      <!-- <button (click)="onPreviousMonth()"> Previous </button> -->
+      <span> {{ getMonthName(monthNumber) }} &nbsp; {{ year }} </span>
+      <!-- <button (click)="onNextMonth()"> Next </button> -->
+
+      <ion-button class="fr" fill="clear" size="small" color="dark" (click)="onNextMonth()">
+        <ion-icon slot="icon-only" name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </div>
+
+    <span *ngFor='let weekDay of weekDaysName' class="day current">
+      {{ weekDay }}
+    </span>
+  
+    <span *ngFor='let day of monthDays' class="day">
+      {{ day.number }}
+    </span>
+  </ion-card>
+
+  <br>
+  <h4 class="p-4">Upcoming tests <span class="fr link">Sort by <ion-icon class="sort-icon" name="chevron-down-outline"></ion-icon> </span></h4>
+
+
+  <ion-item button lines="none">
+    <ion-avatar slot="start">
+      <img src="assets/icon/atom.svg">
+    </ion-avatar>
+    <ion-label>
+      Science
+      <p>Presentation</p>
+    </ion-label>
+    <ion-label slot="end">
+      <p class="ion-text-right">Sun, 10:00 AM</p>
+      <p>&nbsp;</p>
+    </ion-label>
+  </ion-item>
+  <ion-item button lines="none">
+    <ion-avatar slot="start">
+      <img src="assets/icon/atom.svg">
+    </ion-avatar>
+    <ion-label>
+      Science
+      <p>Test</p>
+    </ion-label>
+    <ion-label slot="end">
+      <p class="ion-text-right">Wed, 10:00 AM</p>
+      <p>&nbsp;</p>
+    </ion-label>
+  </ion-item>
+
+  </div>
 
 </ion-content>
