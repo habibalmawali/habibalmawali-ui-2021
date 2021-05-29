@@ -7,7 +7,8 @@
     padding-top: 2px;
     padding-bottom: 18px;
     width: 290px;
-    --background: #F0F0F0;
+    // --background: #F0F0F0;
+    --background: var(--custom-gradient-secondary);
     margin: 10px auto;
     box-shadow: none;
     border-radius: 20px;
@@ -72,5 +73,6 @@ ion-item {
 ion-avatar {
     --border-radius: 30%;
     background-color: #ebebeb;
-    border: 4px solid #ebebeb;
+    // border: 4px solid #ebebeb;
+    padding: 4px;
 }

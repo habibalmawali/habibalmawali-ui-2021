@@ -34,3 +34,24 @@
 ion-title {
     font-size: 30px;
 }
+
+.primary {
+    background: var(--custom-gradient-primary);
+    color: #ffffff;
+}
+
+.medium {
+    background: var(--custom-gradient-secondary);
+    color: #474141;
+    // color: #ffffff;
+}
+
+.dark {
+    background: var(--custom-gradient-dark);
+    color: #ffffff;
+}
+
+.night {
+    background: var(--custom-gradient-night);
+    color: #ffffff;
+}

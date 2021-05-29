@@ -3,6 +3,14 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  --custom-gradient-primary: linear-gradient(to top, #3a7bd5, #3a6073);
+  --custom-gradient-secondary: linear-gradient(to bottom, #ece9e6, #ffffff);
+  --custom-gradient-dark: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  --custom-gradient-night: linear-gradient(to right, #232526, #414345);;
+
+
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
